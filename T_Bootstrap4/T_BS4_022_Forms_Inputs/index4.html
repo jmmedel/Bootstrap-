@@ -2,14 +2,8 @@
 
 
 <!-- 
-
-    Bootstrap Checkboxes
-Option 1
-Option 2
-Option 3
-Checkboxes are used if you want the user to select any number of options from a list of preset options.
-
-The following example contains three checkboxes. The last option is disabled:
+    
+    Use the .form-check-inline class if you want the checkboxes to appear on the same line:
 
 -->
 
@@ -27,20 +21,20 @@ The following example contains three checkboxes. The last option is disabled:
 <body>
 
 <div class="container">
-  <h2>Form control: checkbox</h2>
-  <p>The form below contains three checkboxes. The last option is disabled:</p>
+  <h2>Form control: inline checkbox</h2>
+  <p>The form below contains three inline checkboxes:</p>
   <form>
-    <div class="form-check">
+    <div class="form-check form-check-inline">
       <label class="form-check-label">
         <input type="checkbox" class="form-check-input" value="">Option 1
       </label>
     </div>
-    <div class="form-check">
+    <div class="form-check form-check-inline">
       <label class="form-check-label">
         <input type="checkbox" class="form-check-input" value="">Option 2
       </label>
     </div>
-    <div class="form-check disabled">
+    <div class="form-check form-check-inline">
       <label class="form-check-label">
         <input type="checkbox" class="form-check-input" value="" disabled>Option 3
       </label>
@@ -51,8 +45,3 @@ The following example contains three checkboxes. The last option is disabled:
 </body>
 </html>
 
-
-<!--
-    Use the .form-check-inline class if you want the checkboxes to appear on the same line:
-    
- -->
