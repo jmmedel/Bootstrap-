@@ -1,13 +1,14 @@
 
 
 
-<!--
-    Vertical Nav
-Add the .flex-column class to create a vertical nav:
+<!-- 
 
- -->
+    Justified Tabs/pills
+Justify the tabs/pills with the .nav-justified class (equal width):
 
- <!DOCTYPE html>
+-->
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <title>Bootstrap Example</title>
@@ -21,11 +22,27 @@ Add the .flex-column class to create a vertical nav:
 <body>
 
 <div class="container">
-  <h2>Vertical Nav</h2>
-  <p>Use the .flex-column class to create a vertical nav:</p>
-  <ul class="nav flex-column">
+  <h2>Justified Tabs/Pills</h2>
+  <p>To justify tabs/pills (equal width), use the .nav-justified class:</p>
+  <ul class="nav nav-pills nav-justified">
+    <li class="nav-item">
+      <a class="nav-link active" href="#">Active</a>
+    </li>
     <li class="nav-item">
       <a class="nav-link" href="#">Link</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Link</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link disabled" href="#">Disabled</a>
+    </li>
+  </ul><br>
+
+  <p>Justified tabs:</p>
+  <ul class="nav nav-tabs nav-justified">
+    <li class="nav-item">
+      <a class="nav-link active" href="#">Active</a>
     </li>
     <li class="nav-item">
       <a class="nav-link" href="#">Link</a>
@@ -41,4 +58,5 @@ Add the .flex-column class to create a vertical nav:
 
 </body>
 </html>
+
 
