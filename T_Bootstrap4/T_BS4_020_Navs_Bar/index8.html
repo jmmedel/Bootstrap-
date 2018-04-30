@@ -3,5 +3,40 @@
 
 <!--
     Navbar Forms and Buttons
-    
+Add a <form> element with class="form-inline" to group inputs and buttons side-by-side:
+
  -->
+
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <form class="form-inline" action="/action_page.php">
+    <input class="form-control" type="text" placeholder="Search">
+    <button class="btn btn-success" type="submit">Search</button>
+  </form>
+</nav>
+<br>
+
+<div class="container">
+  <h3>Navbar Forms</h3>
+  <p>Use the .form-inline class to align form elements side by side inside the navbar.</p>
+</div>
+
+</body>
+</html>
+
+<!-- 
+    You can also use other input classes, such as .input-group-prepend or .input-group-append to attach an icon or help text next to the input field. You will learn more about these classes in the Bootstrap Inputs chapter.
+    
+-->
