@@ -3,11 +3,12 @@
 
 <!-- 
 
-Closing Popovers
-By default, the popover is closed when you click on the element again. However, you can use the data-trigger="focus" attribute which will close the popover when clicking outside the element:
+    Tip: If you want the popover to be displayed
+     when you move the mouse pointer over the 
+     element, use the data-trigger attribute with
+     a value of "hover":
 
 -->
-
 
 <!DOCTYPE html>
 <html lang="en">
@@ -24,7 +25,8 @@ By default, the popover is closed when you click on the element again. However, 
 
 <div class="container">
   <h3>Popover Example</h3>
-    <a href="#" title="Dismissible popover" data-toggle="popover" data-trigger="focus" data-content="Click anywhere in the document to close this popover">Click me</a>
+  <a href="#" title="Header" data-toggle="popover" data-content="Some content">Click Me</a><br>
+  <a href="#" title="Header" data-toggle="popover" data-trigger="hover" data-content="Some content">Hover over me</a>
 </div>
 
 <script>
@@ -35,5 +37,3 @@ $(document).ready(function(){
 
 </body>
 </html>
-
-
