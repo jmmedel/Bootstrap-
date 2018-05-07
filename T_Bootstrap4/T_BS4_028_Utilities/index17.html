@@ -1,9 +1,10 @@
 
 
+
 <!-- 
 
-    Visibility
-Use the .visible or .invisible classes to control the visibility of elements. Note: These classes do not change the CSS display value. They only add visibility:visible or visibility:hidden:
+    Close icon
+Use the .close class to style a close icon. This is often used for alerts and modals. Note that we use the &times; symbol to create the actual icon (a better lookiong "x"). Also note that it floats right by default:
 
 -->
 
@@ -21,11 +22,13 @@ Use the .visible or .invisible classes to control the visibility of elements. No
 <body>
 
 <div class="container">
-  <h1>Visibility</h1>
-  <p>Use the .visible or .invisible classes to control the visibility of elements. Note: These classes do not change the CSS display value. They only add visibility:visible or visibility:hidden to an element:</p>
-  <div class="visible bg-success">I am visible</div>
-  <div class="invisible bg-warning">I am invisible</div>
+  <h1>Close Icon</h1>
+  <p>Use the .close class to style a close icon. This is often used for alerts and modals. Note that we use the times; symbol to create the actual icon (a better lookiong "x"). Also note that it is right-aligned by default:</p>
+  <div class="clearfix">
+    <button type="button" class="close">&times;</button>
+  </div>
 </div>
 
 </body>
 </html>
+
