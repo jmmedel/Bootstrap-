@@ -1,0 +1,63 @@
+
+
+<!-- 
+   Bootstrap 4 Grid Medium
+Medium Grid Example
+ 	Extra small	Small	Medium	Large	Extra Large
+Class prefix	.col-	.col-sm-	.col-md-	.col-lg-	.col-xl-
+Screen width	<576px	>=576px	>=768px	>=992px	>=1200px
+In the previous chapter, we presented a grid example with classes for small devices. We used two divs (columns) and we gave them a 25%/75% split:
+
+<div class="col-sm-3">....</div>
+<div class="col-sm-9">....</div>
+But on medium devices the design may be better as a 50%/50% split.
+
+Medium devices are defined as having a screen width from 768 pixels to 991 pixels.
+
+For medium devices we will use the .col-md-* classes:
+
+<div class="col-sm-3 col-md-6">....</div>
+<div class="col-sm-9 col-md-6">....</div>
+Now Bootstrap is going to say "at the small size, look at classes with -sm- in them and use those. At the medium size, look at classes with -md- in them and use those".
+
+The following example will result in a 25%/75% split on small devices and a 50%/50% split on medium (and large and xlarge) devices. On extra small devices, it will automatically stack (100%):
+
+.col-sm-3 .col-md-6
+.col-sm-9 .col-md-6
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container-fluid">
+  <h1>Medium Grid</h1>
+  <p>The following example will result in a 25%/75% split on small devices and a 50%/50% split on medium (and large and xlarge) devices. On extra small devices, it will automatically stack (100%).</p>
+  <p>Resize the browser window to see the effect.</p>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-3 col-md-6 bg-success">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br>
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      </div>
+      <div class="col-sm-9 col-md-6 bg-warning">
+        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+      </div>
+    </div>
+  </div>
+</div>
+    
+</body>
+</html>
+
+
