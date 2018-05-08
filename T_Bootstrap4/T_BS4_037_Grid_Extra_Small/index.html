@@ -1,0 +1,58 @@
+
+
+
+<!-- 
+
+    Bootstrap 4 Grid Extra Small
+Extra Small Grid Example
+ 	Extra small	Small	Medium	Large	Extra Large
+Class prefix	.col-	.col-sm-	.col-md-	.col-lg-	.col-xl-
+Screen width	<576px	>=576px	>=768px	>=992px	>=1200px
+Assume we have a simple layout with two columns. We want the columns to split 25%/75% for ALL devices.
+
+We will add the following classes to our two columns:
+<div class="col-3">....</div>
+<div class="col-9">....</div>
+The following example will result in a 25%/75% split on all devices (extra small, small, medium, large and xlarge).
+
+col-3
+col-9
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container-fluid">
+  <h1>Extra Small Grid</h1>
+  <p>The following example will result in a 25%/75% split on all devices.</p>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-3 bg-success">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br>
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      </div>
+      <div class="col-9 bg-warning">
+        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
+
+<!-- 
+    Note: Make sure that the sum adds up to 12 or fewer (it is not required that you use all 12 available columns):
+    
+-->
