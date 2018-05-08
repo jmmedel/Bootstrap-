@@ -2,14 +2,16 @@
 
 
 <!-- 
-.flex-sm-row	Display flex items horizontally on small screens	
-.flex-sm-row-reverse	Display flex items horizontally, and right-aligned, on small screens	
-.flex-md-row	Display flex items horizontally on medium screens	
-.flex-md-row-reverse	Display flex items horizontally, and right-aligned, on medium screens	
-.flex-lg-row	Display flex items horizontally on large screens	
-.flex-lg-row-reverse	Display flex items horizontally, and right-aligned, on large screens	
-.flex-xl-row	Display flex items horizontally on xlarge screens	
-.flex-xl-row-reverse	Display flex items horizontally, and right-aligned, on xlarge screens
+
+    .flex-sm-column	Display flex items vertically on small screens	
+.flex-sm-column-reverse	Display flex items vertically, with reversed order, on small screens	
+.flex-md-column	Display flex items vertically on medium screens	
+.flex-md-column-reverse	Display flex items vertically, with reversed order, on medium screens	
+.flex-lg-column	Display flex items vertically on large screens	
+.flex-lg-column-reverse	Display flex items vertically, with reversed order, on large screens	
+.flex-xl-column	Display flex items vertically on xlarge screens	
+.flex-xl-column-reverse	Display flex items vertically, with reversed order, on xlarge screens
+
 
 -->
 
@@ -27,39 +29,39 @@
 <body> 
 
 <div class="container mt-3">
-  <h2>Horizontal Direction</h2>
-  <p>Use .flex-row to make the flex items appear side by side (default).</p>
-  <p>Use .flex-sm|md|lg|xl-row to achieve this on a specific screen size. Resize the browser window to see the effect</p>
-  <p><code>flex-row:</code></p>
-  <div class="d-flex flex-row bg-secondary mb-3">
+  <h2>Vertical Direction</h2>
+  <p>Use .flex-column to display the flex items vertically (on top of each other).</p>
+  <p>Use .flex-sm|md|lg|xl-column to achieve this on different screen sizes.</p>
+  <p><code>.flex-column</code>:</p>
+  <div class="d-flex flex-column mb-3">
+    <div class="p-2 bg-info">Flex item 1</div>
+    <div class="p-2 bg-warning">Flex item 2</div>
+    <div class="p-2 bg-primary">Flex item 3</div>
+  </div>
+
+  <p><code>.flex-sm-column</code>:</p>
+  <div class="d-flex flex-sm-column mb-3">
+    <div class="p-2 bg-info">Flex item 1</div>
+    <div class="p-2 bg-warning">Flex item 2</div>
+    <div class="p-2 bg-primary">Flex item 3</div>
+  </div>
+
+  <p><code>.flex-md-column</code>:</p>
+  <div class="d-flex flex-md-column mb-3">
     <div class="p-2 bg-info">Flex item 1</div>
     <div class="p-2 bg-warning">Flex item 2</div>
     <div class="p-2 bg-primary">Flex item 3</div>
   </div>
   
-  <p><code>flex-sm-row:</code></p>
-  <div class="d-sm-flex flex-sm-row bg-secondary mb-3">
+  <p><code>.flex-lg-column</code>:</p>
+  <div class="d-flex flex-lg-column mb-3">
     <div class="p-2 bg-info">Flex item 1</div>
     <div class="p-2 bg-warning">Flex item 2</div>
     <div class="p-2 bg-primary">Flex item 3</div>
   </div>
   
-  <p><code>flex-md-row:</code></p>
-  <div class="d-md-flex flex-md-row bg-secondary mb-3">
-    <div class="p-2 bg-info">Flex item 1</div>
-    <div class="p-2 bg-warning">Flex item 2</div>
-    <div class="p-2 bg-primary">Flex item 3</div>
-  </div>
-  
-  <p><code>flex-lg-row:</code></p>
-  <div class="d-lg-flex flex-lg-row bg-secondary mb-3">
-    <div class="p-2 bg-info">Flex item 1</div>
-    <div class="p-2 bg-warning">Flex item 2</div>
-    <div class="p-2 bg-primary">Flex item 3</div>
-  </div>
-  
-  <p><code>flex-xl-row:</code></p>
-  <div class="d-xl-flex flex-xl-row bg-secondary mb-3">
+  <p><code>.flex-xl-column</code>:</p>
+  <div class="d-flex flex-xl-column mb-3">
     <div class="p-2 bg-info">Flex item 1</div>
     <div class="p-2 bg-warning">Flex item 2</div>
     <div class="p-2 bg-primary">Flex item 3</div>
@@ -68,5 +70,4 @@
 
 </body>
 </html>
-
 
